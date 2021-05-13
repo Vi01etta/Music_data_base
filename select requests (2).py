@@ -96,7 +96,7 @@ WHERE t.albums_id IN (
                 SELECT COUNT (id) FROM track
                 GROUP BY albums_id
                  ORDER BY COUNT
-        LIMIT 1 )
+                 LIMIT 1 )
 )
 
 order by a.name
